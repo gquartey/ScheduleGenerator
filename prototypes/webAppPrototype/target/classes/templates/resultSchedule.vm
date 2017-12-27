@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<div class = "title-box">
+    This is what we found:
+</div>
+ After some digging we found that you have $semestersLeft semesters left
+and therefore $canOrCannot graduate with your degree in $major!
+</body>
+</html>

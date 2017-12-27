@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="/pages/landing.css"/>
+    <script src = "/scripts/scripts.js"></script>
+</head>
+<body>
+<div class  = "wrapper">
+<div class = "title-box">
+    Welcome! Please enter the following information to get started.
+    <p>The Starfruit Schedule Generator for Swarthmore students allows
+        you to generate an academic schedule for the rest of your time
+        at Swarthmore. The generated schedule is dependent on your major, minor,
+        study abroad plans, academic interests, and academic history.</p>
+</div>
+<div class = "row">
+    <div id = "class-majors">
+        <div class = "dropdown">
+            <button onclick ="openDropdown('class-year')" class = dropbtn>Class Year</button>
+            <div id = "class-year" class = "dropdown-content">
+                <button onclick = "storeClass('2021')" class = infobtn> 2021</button>
+                <button onclick = "storeClass('2020')" class = infobtn> 2020</button>
+                <button onclick = "storeClass('2019')" class = infobtn> 2019</button>
+                <button onclick = "storeClass('2018')" class = infobtn> 2018</button>
+            </div>
+        </div>
+        <div class = "dropdown">
+            <button onclick ="openDropdown('major-1')" class = dropbtn>Major 1</button>
+            <div id = "major-1" class = "dropdown-content">
+                <button onclick = "storeCourse('ECON', 'major1')" class = infobtn> Economics</button>
+                <button onclick = "storeCourse('CPSC', 'major1')" class = infobtn> Computer Science</button>
+                <button onclick = "storeCourse('BIOL', 'major1')" class = infobtn> Biology</button>
+                <button onclick = "storeCourse('ENGN', 'major1')" class = infobtn> Engineering</button>
+            </div>
+        </div>
+        <div class = "dropdown">
+            <button onclick ="openDropdown('major-2')" class = dropbtn>Major 2</button>
+            <div id = "major-2" class = "dropdown-content">
+                <button onclick = "storeCourse('ECON', 'major2')" class = infobtn> Economics</button>
+                <button onclick = "storeCourse('CPSC', 'major2')" class = infobtn> Computer Science</button>
+                <button onclick = "storeCourse('BIOL', 'major2')" class = infobtn> Biology</button>
+                <button onclick = "storeCourse('ENGN', 'major2')" class = infobtn> Engineering</button>
+            </div>
+        </div>
+        <div class = "dropdown">
+            <button onclick ="openDropdown('minor-1')" class = dropbtn>Minor 1</button>
+            <div id = "minor-1" class = "dropdown-content">
+                <button onclick = "storeCourse('ECON', 'minor1')" class = infobtn> Economics</button>
+                <button onclick = "storeCourse('CPSC', 'minor1')" class = infobtn> Computer Science</button>
+                <button onclick = "storeCourse('BIOL', 'minor1')" class = infobtn> Biology</button>
+                <button onclick = "storeCourse('ENGN', 'minor1')" class = infobtn> Engineering</button>
+            </div>
+        </div>
+        <div class = "dropdown">
+            <button onclick ="openDropdown('minor-2')" class = dropbtn>Minor 2</button>
+            <div id = "minor-2" class = "dropdown-content">
+                <button onclick = "storeCourse('ECON', 'minor2')" class = infobtn> Economics</button>
+                <button onclick = "storeCourse('CPSC', 'minor2')" class = infobtn> Computer Science</button>
+                <button onclick = "storeCourse('BIOL', 'minor2')" class = infobtn> Biology</button>
+                <button onclick = "storeCourse('ENGN', 'minor2')" class = infobtn> Engineering</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class = "row">
+    <div id = "interests-history">
+        <div class = "dropdown">
+            <button onclick ="openDropdown('academic-interests')" class = dropbtn>Academic Interests (outside major)</button>
+            <div id = "academic-interests" class = "dropdown-content">
+                <button onclick = "storeInterest('hum')" class = infobtn> Humanities</button>
+                <button onclick = "storeInterest('ss')" class = infobtn> Social Sciences</button>
+                <button onclick = "storeInterest('stem')" class = infobtn> STEM</button>
+                <button onclick = "storeInterest('art')" class = infobtn> Art and Music</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class = "row">
+    <div class = "file-upload">
+        <input type="file" name = "transcript" id = "transcript" class="input-file" onchange = "uploadTranscript()" >
+        <label for="transcript">Upload Transcript</label>
+    </div>
+</div>
+<div class = "row">
+    <div class = "abroad">
+        <div class = "dropdown" id = "abroad-dropdown">
+            <button onclick ="openDropdown('study-abroad')" class = dropbtn>Select Abroad Semester</button>
+            <div id = "study-abroad" class = "dropdown-content">
+                <button onclick = "abroadSemester('NONE')" class = infobtn> Not going abroad</button>
+                <button onclick = "abroadSemester('S2018')" class = infobtn> Spring 2018</button>
+                <button onclick = "abroadSemester('F2018')" class = infobtn> Fall 2018</button>
+                <button onclick = "abroadSemester('S2019')" class = infobtn> Spring 2019</button>
+                <button onclick = "abroadSemester('F2019')" class = infobtn> Fall 2019</button>
+                <button onclick = "abroadSemester('S2020')" class = infobtn> Spring 2020</button>
+                <button onclick = "abroadSemester('F2020')" class = infobtn> Fall 2020</button>
+                <button onclick = "abroadSemester('S2021')" class = infobtn> Spring 2021</button>
+                <button onclick = "abroadSemester('F2021')" class = infobtn> Fall 2021</button>
+            </div>
+        </div>
+        <div id = "abroadCredits">
+            <p>How many credits do you expect to earn abroad?</p>
+            <form action = '/TODO'>
+                <div class = "form-group">
+                    <label for="major-1">Major 1</label>
+                    <input id="major1" name="major1" class ="form-control" type = "text">
+                </div>
+                <div class = "form-group">
+                    <label for="minor-1">Minor 1</label>
+                    <input id="minor1" name="minor1" class ="form-control" type = "text">
+                </div>
+                <div class = "form-group">
+                    <label for="generalcredit">General Credit</label>
+                    <input id="generalcredit" name="generalcredit" class ="form-control" type = "text">
+                </div>
+                <button type="submit" class="btn">Submit Information</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class = "row">
+    <form action = '/result'>
+        <button type="submit" class=btn> Generate Schedule</button>
+    </form>
+</div>
+</div>
+</body>
+</html>

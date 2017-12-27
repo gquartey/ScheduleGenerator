@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="/pages/result.css"/>
+    <script src = "/scripts/scripts.js"></script>
+</head>
+<body>
+<div class = "wrapper">
+<div class = "title-box">
+    Here is your resulting schedule.
+</div>
+</div>
+</body>
+</html>

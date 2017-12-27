@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="/landing.css"/>
+</head>
+<body>
+<div class = "title-box">
+Welcome to Starfruit user #$userID! Input your information below.
+</div>
+<form action = '/resultSchedule'>
+    <div class = "form-group">
+        <label for="classYear">Class year</label>
+        <input id="classYear" name="classYear" class ="form-control" type = "text">
+    </div>
+    <div class = "form-group">
+            <label for="major">Major</label>
+            <input id="major" name="major" class ="form-control" type = "text">
+    </div>
+    <div class = "form-group">
+            <label for="minor">Minor</label>
+            <input id="minor" name="minor" class ="form-control" type = "text">
+    </div>
+    <button type="submit" class="btn">Submit Information</button>
+</body>
+</html>

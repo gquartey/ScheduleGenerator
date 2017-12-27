@@ -1,0 +1,154 @@
+.title-box{
+    background: #fff;
+    font-size: 25px;
+}
+body{
+    background-color: light gray;
+}
+.wrapper{
+    max-width: 960px;
+    margin: auto;
+    background-color:#002e4d;
+    color: white;
+    border: 10px solid black;
+}
+p{
+    color: white;
+    font-size: 17.5px;
+}
+.dropbtn{
+    width: 100%;
+    background-color: #e69900;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    text-shadow: 1px 1px #805500;
+}
+.title-box{
+    text-align: center;
+    background-color: #00ccff;
+    color: white;
+    text-shadow: 1px 1px #805500;
+}
+.btn{
+    width: 250px;
+    background-color: #e69900;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    text-shadow: 1px 1px #805500;
+}
+#abroadCredits{
+    display: none;
+    width: 33%;
+}
+.dropbtn:hover{
+    background-color: #00ccff;
+}
+.infobtn:hover{
+    background-color: #00ccff
+}
+.btn:hover{
+    background-color: #00ccff
+}
+input[type=text] {
+    width: 250px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.infobtn{
+    width: 100%;
+    height: 30px;
+    background-color: #e69900;
+    color: white;
+    cursor: pointer;
+    font-size: 10px;
+    text-shadow: 1px 1px #805500;
+}
+label {
+    padding-right: 50px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index:10;
+    padding-bottom: 125px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+.dropdown-content p {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.row{
+    width: 100%;
+    min-height: 187px;
+}
+.input-file + label {
+    width: 100% px;
+    background-color: #e69900;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    text-shadow: 1px 1px #805500;
+}
+.input-file {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+	display:inline-block;
+}
+.manual-input{
+    display: block;
+}
+#abroad-dropdown{
+    padding-bottom: 10px;
+}
+.credit-box{
+    width: 200px;
+}
+.file-upload{
+    width: 250px;
+    padding-top: 15px;
+    }
+.input-file:focus + label,
+.input-file + label:hover {
+    background-color: #00ccff;
+}
+#generalcredit, #minor1, #major1{
+    width: 100px;
+}
+#interests-history{
+    display: inline-block;
+}
+.show {display:block;}
+.body{
+    height: 600px;
+}
+#result{
+    float: right;
+}
+

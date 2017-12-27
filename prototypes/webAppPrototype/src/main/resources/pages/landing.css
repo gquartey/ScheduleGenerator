@@ -1,0 +1,31 @@
+.title-box{
+    background: #fff;
+    font-size: 30px;
+}
+.form-group{
+    width:100%;
+    background: #2fc;
+}
+.btn{
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #45a049;
+}
+.form-control {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
